@@ -263,7 +263,6 @@ query_sent_now(int id)
 		gettimeofday(&this.pending_queries[i].time, NULL);
 		this.num_pending ++;
 		QTRACK_DEBUG(4, "Adding query id %d into this.pending_queries[%d]", id, i);
-		id = -1;
 	}
 }
 
